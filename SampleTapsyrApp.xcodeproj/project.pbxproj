@@ -26,6 +26,12 @@
 		2430F4B02423F77800E2E105 /* UserDescriptiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4AF2423F77800E2E105 /* UserDescriptiveCell.swift */; };
 		2430F4B22423F78000E2E105 /* UserHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B12423F78000E2E105 /* UserHeaderCell.swift */; };
 		2430F4B42423F98800E2E105 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B32423F98800E2E105 /* ProfileModel.swift */; };
+		2430F4B6242412FB00E2E105 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B5242412FB00E2E105 /* ProfileData.swift */; };
+		2430F4BB242414D500E2E105 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BA242414D500E2E105 /* NetworkManager.swift */; };
+		2430F4BD242414E900E2E105 /* CustomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BC242414E900E2E105 /* CustomParser.swift */; };
+		2430F4BF2424150100E2E105 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BE2424150100E2E105 /* Parser.swift */; };
+		2430F4C12424151F00E2E105 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C02424151F00E2E105 /* CustomError.swift */; };
+		2430F4C32424153F00E2E105 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C22424153F00E2E105 /* EndpointType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		2430F4AF2423F77800E2E105 /* UserDescriptiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptiveCell.swift; sourceTree = "<group>"; };
 		2430F4B12423F78000E2E105 /* UserHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderCell.swift; sourceTree = "<group>"; };
 		2430F4B32423F98800E2E105 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		2430F4B5242412FB00E2E105 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		2430F4BA242414D500E2E105 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2430F4BC242414E900E2E105 /* CustomParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParser.swift; sourceTree = "<group>"; };
+		2430F4BE2424150100E2E105 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		2430F4C02424151F00E2E105 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		2430F4C22424153F00E2E105 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTapsyrApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleTapsyrApp/Pods-SampleTapsyrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D61A32A688F1BF52526892DD /* Pods_SampleTapsyrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTapsyrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +118,7 @@
 			children = (
 				2430F47324235C3C00E2E105 /* AppDelegate.swift */,
 				2430F47724235C3C00E2E105 /* Main.storyboard */,
+				2430F4B8242414A600E2E105 /* Managers */,
 				2430F4912423781E00E2E105 /* MainPage */,
 				2430F4992423AA8C00E2E105 /* LoginPage */,
 				2430F4A42423D01900E2E105 /* ProfilePage */,
@@ -218,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2430F4B32423F98800E2E105 /* ProfileModel.swift */,
+				2430F4B5242412FB00E2E105 /* ProfileData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +243,34 @@
 				2430F4B12423F78000E2E105 /* UserHeaderCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2430F4B8242414A600E2E105 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2430F4B9242414B600E2E105 /* NetworkManager */,
+				2430F4C42424155700E2E105 /* Requests */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2430F4B9242414B600E2E105 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2430F4BA242414D500E2E105 /* NetworkManager.swift */,
+				2430F4BC242414E900E2E105 /* CustomParser.swift */,
+				2430F4BE2424150100E2E105 /* Parser.swift */,
+				2430F4C02424151F00E2E105 /* CustomError.swift */,
+				2430F4C22424153F00E2E105 /* EndpointType.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		2430F4C42424155700E2E105 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,13 +393,19 @@
 				2430F4AE2423F5F800E2E105 /* ProfileTableView.swift in Sources */,
 				2430F49D2423AAC900E2E105 /* LoginViewController.swift in Sources */,
 				2430F4A92423F1E600E2E105 /* ProfileViewController.swift in Sources */,
+				2430F4C12424151F00E2E105 /* CustomError.swift in Sources */,
+				2430F4BD242414E900E2E105 /* CustomParser.swift in Sources */,
 				2430F4A12423B15300E2E105 /* TextFieldOption.swift in Sources */,
 				2430F47424235C3C00E2E105 /* AppDelegate.swift in Sources */,
+				2430F4B6242412FB00E2E105 /* ProfileData.swift in Sources */,
 				2430F4B02423F77800E2E105 /* UserDescriptiveCell.swift in Sources */,
 				2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */,
+				2430F4BB242414D500E2E105 /* NetworkManager.swift in Sources */,
 				2430F4A32423B32000E2E105 /* CustomSegmentedControl.swift in Sources */,
+				2430F4C32424153F00E2E105 /* EndpointType.swift in Sources */,
 				2430F4B22423F78000E2E105 /* UserHeaderCell.swift in Sources */,
 				2430F4902423781800E2E105 /* OnboardingView.swift in Sources */,
+				2430F4BF2424150100E2E105 /* Parser.swift in Sources */,
 				2430F4AB2423F48200E2E105 /* Profile+TableView.swift in Sources */,
 				2430F48E24236DD500E2E105 /* Color+Extension.swift in Sources */,
 				2430F48B2423631A00E2E105 /* MainViewController.swift in Sources */,

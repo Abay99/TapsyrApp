@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: - Views
-    private lazy var profileTableView = ProfileTableView(delegate: self as? (UITableViewDataSource & UITableViewDelegate))
+    private lazy var profileTableView = ProfileTableView(delegate: self)
     
     // MARK: - Properties
     let rowTypes = RowType.allCases
