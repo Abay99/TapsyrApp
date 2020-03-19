@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,10 @@
 		2430F47924235C3C00E2E105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2430F47724235C3C00E2E105 /* Main.storyboard */; };
 		2430F47B24235C3E00E2E105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2430F47A24235C3E00E2E105 /* Assets.xcassets */; };
 		2430F47E24235C3E00E2E105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2430F47C24235C3E00E2E105 /* LaunchScreen.storyboard */; };
+		2430F48B2423631A00E2E105 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F48A2423631A00E2E105 /* MainViewController.swift */; };
+		2430F48E24236DD500E2E105 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F48D24236DD500E2E105 /* Color+Extension.swift */; };
+		2430F4902423781800E2E105 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F48F2423781800E2E105 /* OnboardingView.swift */; };
+		2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4952423788000E2E105 /* OnboardingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2430F47A24235C3E00E2E105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2430F47D24235C3E00E2E105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2430F47F24235C3E00E2E105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2430F48A2423631A00E2E105 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2430F48D24236DD500E2E105 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		2430F48F2423781800E2E105 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2430F4952423788000E2E105 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTapsyrApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleTapsyrApp/Pods-SampleTapsyrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D61A32A688F1BF52526892DD /* Pods_SampleTapsyrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTapsyrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +60,6 @@
 				9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */,
 				056BEA84E519C52868F699FC /* Pods-SampleTapsyrApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,11 +86,55 @@
 			children = (
 				2430F47324235C3C00E2E105 /* AppDelegate.swift */,
 				2430F47724235C3C00E2E105 /* Main.storyboard */,
+				2430F4912423781E00E2E105 /* MainPage */,
+				2430F48C24236DBA00E2E105 /* Extensions */,
 				2430F47A24235C3E00E2E105 /* Assets.xcassets */,
 				2430F47C24235C3E00E2E105 /* LaunchScreen.storyboard */,
 				2430F47F24235C3E00E2E105 /* Info.plist */,
 			);
 			path = SampleTapsyrApp;
+			sourceTree = "<group>";
+		};
+		2430F48C24236DBA00E2E105 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2430F48D24236DD500E2E105 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2430F4912423781E00E2E105 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				2430F4922423782D00E2E105 /* Model */,
+				2430F4932423784C00E2E105 /* View */,
+				2430F4942423785300E2E105 /* Controller */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		2430F4922423782D00E2E105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2430F4952423788000E2E105 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2430F4932423784C00E2E105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2430F48F2423781800E2E105 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2430F4942423785300E2E105 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2430F48A2423631A00E2E105 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2430F47424235C3C00E2E105 /* AppDelegate.swift in Sources */,
+				2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */,
+				2430F4902423781800E2E105 /* OnboardingView.swift in Sources */,
+				2430F48E24236DD500E2E105 /* Color+Extension.swift in Sources */,
+				2430F48B2423631A00E2E105 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
