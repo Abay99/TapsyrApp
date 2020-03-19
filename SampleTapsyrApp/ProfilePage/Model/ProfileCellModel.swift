@@ -9,7 +9,7 @@
 
 import UIKit
 
-struct ProfileModel {
+struct ProfileCellModel {
     
     // MARK: - Properties
     private let rowType: ProfileViewController.RowType
@@ -20,29 +20,6 @@ struct ProfileModel {
         case .phone:     return "Номер телефона"
         case .city:    return "Город"
         case .email:   return "Email"
-        }
-    }
-    
-    var description: String {
-        switch rowType {
-        case .fullName:     return ""
-        case .phone:     return "+7 (122) 333 44 55"
-        case .city:    return "New York"
-        case .email:   return "test1@qwe.com"
-        }
-    }
-    
-    var fullName: String {
-        switch rowType {
-        case .fullName:     return "Testovich Test"
-        default: return ""
-        }
-    }
-    
-    var image: String {
-        switch rowType {
-        case .fullName:     return "profileImage"
-        default:            return ""
         }
     }
     
