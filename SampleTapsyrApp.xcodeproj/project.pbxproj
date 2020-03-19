@@ -16,6 +16,10 @@
 		2430F48E24236DD500E2E105 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F48D24236DD500E2E105 /* Color+Extension.swift */; };
 		2430F4902423781800E2E105 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F48F2423781800E2E105 /* OnboardingView.swift */; };
 		2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4952423788000E2E105 /* OnboardingModel.swift */; };
+		2430F49D2423AAC900E2E105 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F49C2423AAC900E2E105 /* LoginViewController.swift */; };
+		2430F49F2423B08300E2E105 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F49E2423B08300E2E105 /* CustomTextField.swift */; };
+		2430F4A12423B15300E2E105 /* TextFieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4A02423B15300E2E105 /* TextFieldOption.swift */; };
+		2430F4A32423B32000E2E105 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4A22423B32000E2E105 /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		2430F48D24236DD500E2E105 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		2430F48F2423781800E2E105 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2430F4952423788000E2E105 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		2430F49C2423AAC900E2E105 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2430F49E2423B08300E2E105 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2430F4A02423B15300E2E105 /* TextFieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldOption.swift; sourceTree = "<group>"; };
+		2430F4A22423B32000E2E105 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTapsyrApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleTapsyrApp/Pods-SampleTapsyrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D61A32A688F1BF52526892DD /* Pods_SampleTapsyrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTapsyrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +95,7 @@
 				2430F47324235C3C00E2E105 /* AppDelegate.swift */,
 				2430F47724235C3C00E2E105 /* Main.storyboard */,
 				2430F4912423781E00E2E105 /* MainPage */,
+				2430F4992423AA8C00E2E105 /* LoginPage */,
 				2430F48C24236DBA00E2E105 /* Extensions */,
 				2430F47A24235C3E00E2E105 /* Assets.xcassets */,
 				2430F47C24235C3E00E2E105 /* LaunchScreen.storyboard */,
@@ -133,6 +142,33 @@
 			isa = PBXGroup;
 			children = (
 				2430F48A2423631A00E2E105 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2430F4992423AA8C00E2E105 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				2430F49A2423AAA200E2E105 /* View */,
+				2430F49B2423AAA800E2E105 /* Controller */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		2430F49A2423AAA200E2E105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2430F49E2423B08300E2E105 /* CustomTextField.swift */,
+				2430F4A22423B32000E2E105 /* CustomSegmentedControl.swift */,
+				2430F4A02423B15300E2E105 /* TextFieldOption.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2430F49B2423AAA800E2E105 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2430F49C2423AAC900E2E105 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2430F49F2423B08300E2E105 /* CustomTextField.swift in Sources */,
+				2430F49D2423AAC900E2E105 /* LoginViewController.swift in Sources */,
+				2430F4A12423B15300E2E105 /* TextFieldOption.swift in Sources */,
 				2430F47424235C3C00E2E105 /* AppDelegate.swift in Sources */,
 				2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */,
+				2430F4A32423B32000E2E105 /* CustomSegmentedControl.swift in Sources */,
 				2430F4902423781800E2E105 /* OnboardingView.swift in Sources */,
 				2430F48E24236DD500E2E105 /* Color+Extension.swift in Sources */,
 				2430F48B2423631A00E2E105 /* MainViewController.swift in Sources */,

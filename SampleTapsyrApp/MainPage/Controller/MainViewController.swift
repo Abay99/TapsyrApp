@@ -19,12 +19,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     ]
     
     //MARK: - Properties
-    
     var scrollWidth: CGFloat?
     var scrollHeight: CGFloat?
     
     //MARK: - UIElements
-    
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "logoTapsyr")
@@ -105,7 +103,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }()
     
     //MARK: - Life cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -124,9 +121,9 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     //MARK: - @objc methods
-    
     @objc private func loginButtonPressed() {
-        
+        let viewController = LoginViewController()
+        present(viewController, animated: true, completion: nil)
     }
     
     @objc private func pageControlPressed() {
@@ -169,8 +166,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         logoImageView.snp.makeConstraints {
             $0.top.equalTo(60)
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(120)
-            $0.height.equalTo(36)
         }
         
         scrollView.snp.makeConstraints {
