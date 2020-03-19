@@ -98,7 +98,8 @@ class LoginViewController: UIViewController {
     
     //MARK: - @objc methods
     @objc private func nextButtonPressed() {
-        
+        let viewController = ProfileViewController()
+        present(viewController, animated: true, completion: nil)
     }
     
     //MARK: - Methods
