@@ -25,11 +25,11 @@ extension ProfileViewController: UITableViewDataSource {
         switch rowTypes[indexPath.row] {
         case .phone, .city, .email:
             let cell: UserDescriptiveCell = tableView.dequeueReusableCell(withIdentifier: "UserDescriptiveCell", for: indexPath) as! UserDescriptiveCell
-            cell.configure(with: ProfileModel(rowType: rowTypes[indexPath.row]))
+            cell.configureItems(with: ProfileCellModel(rowType: rowTypes[indexPath.row], data: profileData!))
             return cell
         case .fullName:
             let cell: UserHeaderCell = tableView.dequeueReusableCell(withIdentifier: "UserHeaderCell", for: indexPath) as! UserHeaderCell
-            cell.configure(with: ProfileModel(rowType: rowTypes[indexPath.row]))
+            cell.configureItems(with: ProfileCellModel(rowType: rowTypes[indexPath.row], data: profileData!))
             return cell
         }
     }

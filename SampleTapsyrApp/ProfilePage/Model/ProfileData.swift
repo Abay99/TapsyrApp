@@ -9,6 +9,10 @@
 import Foundation
 
 struct ProfileData: Decodable {
+    let data: MainData?
+}
+
+struct MainData: Decodable {
     let name: String?
     let avatar: String?
     let phone: String?

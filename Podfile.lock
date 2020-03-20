@@ -1,12 +1,16 @@
 PODS:
   - Alamofire (4.9.0)
   - IQKeyboardManagerSwift (6.5.4)
+  - Kingfisher (5.9.0):
+    - Kingfisher/Core (= 5.9.0)
+  - Kingfisher/Core (5.9.0)
   - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
+  - Kingfisher
   - SnapKit (~> 4.0.0)
   - SVProgressHUD
 
@@ -14,15 +18,17 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
+    - Kingfisher
     - SnapKit
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: dd8c4011260c4090a8cc69d040849f38fe7a9f7d
+PODFILE CHECKSUM: 6a5fc946da3521978121644e87466a79cfb6bf69
 
 COCOAPODS: 1.8.3

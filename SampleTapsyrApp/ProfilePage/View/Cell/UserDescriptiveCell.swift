@@ -31,7 +31,7 @@ class UserDescriptiveCell: UITableViewCell {
     }()
     
     // MARK: - Method
-    func configure(with model: ProfileModel) {
+    func configureItems(with model: ProfileCellModel) {
         titleLabel.text = model.title
         descriptionLabel.text = model.description
     }
@@ -68,4 +68,3 @@ extension UserDescriptiveCell {
         }
     }
 }
-

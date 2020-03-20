@@ -9,6 +9,7 @@ target 'SampleTapsyrApp' do
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
   pod 'SVProgressHUD'
+  pod 'Kingfisher'
 
   # Pods for SampleTapsyrApp
 

@@ -99,7 +99,18 @@ class LoginViewController: UIViewController {
     //MARK: - @objc methods
     @objc private func nextButtonPressed() {
         let viewController = ProfileViewController()
-        present(viewController, animated: true, completion: nil)
+        if let emailData = emailTextField.text, let passwordData = passwordTextField.text {
+            let token = "ztTGT8dSCJiXvYBbT90AzckaSmHFRAAW"
+            let parameters = ["email": emailData, "password": passwordData]
+            Request.shared.postUserAuthentication(token: token, params: parameters, completionHandler: { (profileData) in
+                
+                viewController.configureItems(model: profileData)
+                self.present(viewController, animated: true, completion: nil)
+                
+            }, completionHandlerError: { (error) in
+                self.showAlert(title: "Error", msg: error)
+            })
+        }
     }
     
     //MARK: - Methods

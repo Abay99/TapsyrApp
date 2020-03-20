@@ -20,12 +20,17 @@ class ProfileViewController: UIViewController {
     
     // MARK: - Properties
     let rowTypes = RowType.allCases
+    var profileData: ProfileData?
     
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+    }
+    
+    public func configureItems(model: ProfileData) {
+        profileData = model
     }
 }
 

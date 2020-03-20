@@ -9,6 +9,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class UserHeaderCell: UITableViewCell {
     
@@ -58,9 +59,9 @@ class UserHeaderCell: UITableViewCell {
     }()
     
     // MARK: - Method
-    func configure(with model: ProfileModel) {
+    func configureItems(with model: ProfileCellModel) {
         fullNameLabel.text = model.fullName
-        imageView?.image = UIImage(named: model.image)
+        profileImageView.kf.setImage(with: URL(string: model.image))
     }
     
     // MARK: - Initializers

@@ -25,13 +25,16 @@
 		2430F4AE2423F5F800E2E105 /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4AD2423F5F800E2E105 /* ProfileTableView.swift */; };
 		2430F4B02423F77800E2E105 /* UserDescriptiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4AF2423F77800E2E105 /* UserDescriptiveCell.swift */; };
 		2430F4B22423F78000E2E105 /* UserHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B12423F78000E2E105 /* UserHeaderCell.swift */; };
-		2430F4B42423F98800E2E105 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B32423F98800E2E105 /* ProfileModel.swift */; };
+		2430F4B42423F98800E2E105 /* ProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B32423F98800E2E105 /* ProfileCellModel.swift */; };
 		2430F4B6242412FB00E2E105 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4B5242412FB00E2E105 /* ProfileData.swift */; };
 		2430F4BB242414D500E2E105 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BA242414D500E2E105 /* NetworkManager.swift */; };
 		2430F4BD242414E900E2E105 /* CustomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BC242414E900E2E105 /* CustomParser.swift */; };
 		2430F4BF2424150100E2E105 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4BE2424150100E2E105 /* Parser.swift */; };
 		2430F4C12424151F00E2E105 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C02424151F00E2E105 /* CustomError.swift */; };
 		2430F4C32424153F00E2E105 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C22424153F00E2E105 /* EndpointType.swift */; };
+		2430F4C82424161A00E2E105 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C72424161A00E2E105 /* Endpoints.swift */; };
+		2430F4CA2424162B00E2E105 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C92424162B00E2E105 /* Requests.swift */; };
+		2430F4CC24241AFE00E2E105 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4CB24241AFD00E2E105 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,13 +58,16 @@
 		2430F4AD2423F5F800E2E105 /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
 		2430F4AF2423F77800E2E105 /* UserDescriptiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptiveCell.swift; sourceTree = "<group>"; };
 		2430F4B12423F78000E2E105 /* UserHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderCell.swift; sourceTree = "<group>"; };
-		2430F4B32423F98800E2E105 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		2430F4B32423F98800E2E105 /* ProfileCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellModel.swift; sourceTree = "<group>"; };
 		2430F4B5242412FB00E2E105 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		2430F4BA242414D500E2E105 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2430F4BC242414E900E2E105 /* CustomParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParser.swift; sourceTree = "<group>"; };
 		2430F4BE2424150100E2E105 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		2430F4C02424151F00E2E105 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		2430F4C22424153F00E2E105 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		2430F4C72424161A00E2E105 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		2430F4C92424162B00E2E105 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		2430F4CB24241AFD00E2E105 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTapsyrApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleTapsyrApp/Pods-SampleTapsyrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D61A32A688F1BF52526892DD /* Pods_SampleTapsyrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTapsyrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2430F48D24236DD500E2E105 /* Color+Extension.swift */,
+				2430F4CB24241AFD00E2E105 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,7 +237,7 @@
 		2430F4A72423D03A00E2E105 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2430F4B32423F98800E2E105 /* ProfileModel.swift */,
+				2430F4B32423F98800E2E105 /* ProfileCellModel.swift */,
 				2430F4B5242412FB00E2E105 /* ProfileData.swift */,
 			);
 			path = Model;
@@ -269,6 +276,8 @@
 		2430F4C42424155700E2E105 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				2430F4C72424161A00E2E105 /* Endpoints.swift */,
+				2430F4C92424162B00E2E105 /* Requests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -388,16 +397,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2430F4B42423F98800E2E105 /* ProfileModel.swift in Sources */,
+				2430F4CC24241AFE00E2E105 /* UIViewController+Extension.swift in Sources */,
+				2430F4B42423F98800E2E105 /* ProfileCellModel.swift in Sources */,
 				2430F49F2423B08300E2E105 /* CustomTextField.swift in Sources */,
 				2430F4AE2423F5F800E2E105 /* ProfileTableView.swift in Sources */,
 				2430F49D2423AAC900E2E105 /* LoginViewController.swift in Sources */,
 				2430F4A92423F1E600E2E105 /* ProfileViewController.swift in Sources */,
 				2430F4C12424151F00E2E105 /* CustomError.swift in Sources */,
+				2430F4CA2424162B00E2E105 /* Requests.swift in Sources */,
 				2430F4BD242414E900E2E105 /* CustomParser.swift in Sources */,
 				2430F4A12423B15300E2E105 /* TextFieldOption.swift in Sources */,
 				2430F47424235C3C00E2E105 /* AppDelegate.swift in Sources */,
 				2430F4B6242412FB00E2E105 /* ProfileData.swift in Sources */,
+				2430F4C82424161A00E2E105 /* Endpoints.swift in Sources */,
 				2430F4B02423F77800E2E105 /* UserDescriptiveCell.swift in Sources */,
 				2430F4962423788000E2E105 /* OnboardingModel.swift in Sources */,
 				2430F4BB242414D500E2E105 /* NetworkManager.swift in Sources */,
