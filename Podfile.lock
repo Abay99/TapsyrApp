@@ -6,6 +6,7 @@ PODS:
   - Kingfisher/Core (5.9.0)
   - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
+  - SwiftValidator (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - Kingfisher
   - SnapKit (~> 4.0.0)
   - SVProgressHUD
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, tag `4.2.0`)
 
 SPEC REPOS:
   trunk:
@@ -22,13 +24,24 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
 
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.2.0
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.2.0
+
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
 
-PODFILE CHECKSUM: 6a5fc946da3521978121644e87466a79cfb6bf69
+PODFILE CHECKSUM: 9344ed7ccd507f714624087143e3e64333e8e097
 
 COCOAPODS: 1.8.3

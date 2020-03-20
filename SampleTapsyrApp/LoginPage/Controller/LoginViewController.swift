@@ -8,8 +8,12 @@
 
 import UIKit
 import SnapKit
+import SwiftValidator
 
 class LoginViewController: UIViewController {
+    
+    //MARK: - Properties
+    let validator = Validator()
 
     //MARK: - UIElements
     lazy var logoImageView: UIImageView = {
@@ -37,6 +41,7 @@ class LoginViewController: UIViewController {
     
     lazy var emailTextField: UITextField = {
         let textField = CustomTextField(option: .emailTextField)
+        textField.delegate = self
         return textField
     }()
     
@@ -51,6 +56,7 @@ class LoginViewController: UIViewController {
     
     lazy var passwordTextField: CustomTextField = {
         let textField = CustomTextField(option: .passwordTextField)
+        textField.delegate = self
         return textField
     }()
     
@@ -64,9 +70,9 @@ class LoginViewController: UIViewController {
     
     lazy var nextButton: UIButton = {
         let button = UIButton()
-        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         button.setTitle("Далее", for: .normal)
-        button.backgroundColor = UIColor(hexString: "#0AA8BA")
+        button.setTitleColor(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), for: .normal)
+        button.backgroundColor = UIColor(hexString: "#EDF2FD")
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(nextButtonPressed), for: .touchUpInside)
         return button
@@ -94,26 +100,23 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+        setupValidator()
     }
     
     //MARK: - @objc methods
     @objc private func nextButtonPressed() {
-        let viewController = ProfileViewController()
-        if let emailData = emailTextField.text, let passwordData = passwordTextField.text {
-            let token = "ztTGT8dSCJiXvYBbT90AzckaSmHFRAAW"
-            let parameters = ["email": emailData, "password": passwordData]
-            Request.shared.postUserAuthentication(token: token, params: parameters, completionHandler: { (profileData) in
-                
-                viewController.configureItems(model: profileData)
-                self.present(viewController, animated: true, completion: nil)
-                
-            }, completionHandlerError: { (error) in
-                self.showAlert(title: "Error", msg: error)
-            })
-        }
+        validator.validate(self)
     }
     
     //MARK: - Methods
+    public func checkFormValidity() -> Bool {
+        let isFormValid = emailTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false
+        return isFormValid
+    }
+}
+
+//MARK: - Setup methods
+extension LoginViewController {
     private func setupViews() {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         [logoImageView, segmentedView, containerStackView, copyRightsLabel].forEach { (views) in
@@ -149,6 +152,7 @@ class LoginViewController: UIViewController {
     }
 }
 
+//MARK: - SegmentController valueChanged methods
 extension LoginViewController: CustomSegmentedControlDelegate {
     func changeToIndex(index: Int) {
         switch index {
@@ -156,6 +160,18 @@ extension LoginViewController: CustomSegmentedControlDelegate {
             containerStackView.isHidden = false
         default:
             containerStackView.isHidden = true
+        }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if checkFormValidity() {
+            nextButton.backgroundColor = UIColor(hexString: "#0AA8BA")
+            nextButton.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        } else {
+            nextButton.backgroundColor = UIColor(hexString: "#EDF2FD")
+            nextButton.setTitleColor(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), for: .normal)
         }
     }
 }

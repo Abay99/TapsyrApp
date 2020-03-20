@@ -10,6 +10,7 @@ target 'SampleTapsyrApp' do
   pod 'IQKeyboardManagerSwift'
   pod 'SVProgressHUD'
   pod 'Kingfisher'
+  pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.2.0'
 
   # Pods for SampleTapsyrApp
 

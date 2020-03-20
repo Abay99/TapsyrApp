@@ -35,6 +35,7 @@
 		2430F4C82424161A00E2E105 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C72424161A00E2E105 /* Endpoints.swift */; };
 		2430F4CA2424162B00E2E105 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4C92424162B00E2E105 /* Requests.swift */; };
 		2430F4CC24241AFE00E2E105 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4CB24241AFD00E2E105 /* UIViewController+Extension.swift */; };
+		2430F4CE2424AE0900E2E105 /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430F4CD2424AE0900E2E105 /* TextFieldValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		2430F4C72424161A00E2E105 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		2430F4C92424162B00E2E105 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		2430F4CB24241AFD00E2E105 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2430F4CD2424AE0900E2E105 /* TextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
 		9E3D0064F53F40D941A8DC76 /* Pods-SampleTapsyrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleTapsyrApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleTapsyrApp/Pods-SampleTapsyrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D61A32A688F1BF52526892DD /* Pods_SampleTapsyrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTapsyrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				2430F49C2423AAC900E2E105 /* LoginViewController.swift */,
+				2430F4CD2424AE0900E2E105 /* TextFieldValidator.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2430F4CE2424AE0900E2E105 /* TextFieldValidator.swift in Sources */,
 				2430F4CC24241AFE00E2E105 /* UIViewController+Extension.swift in Sources */,
 				2430F4B42423F98800E2E105 /* ProfileCellModel.swift in Sources */,
 				2430F49F2423B08300E2E105 /* CustomTextField.swift in Sources */,
